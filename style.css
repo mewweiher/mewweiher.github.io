@@ -1,0 +1,204 @@
+h2{
+  font-family: 'Encode Sans';
+}
+
+button{
+  background-color: #f1f1f1;
+  }
+
+table, th, td{
+  border-bottom: 1px solid #bea886;
+   border-collapse: collapse;
+padding:5px;
+}
+
+.before{
+  border:1px solid grey;
+
+}
+
+.after{
+  border: 2px solid #bea886;
+}
+
+.fade { 
+  top: -0.5em; 
+  font-size: 80%;
+  font-style: italic;
+  color: #bea886;
+ }
+
+
+
+
+
+.sideNav {
+  height: 100%;
+  width: 200px;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.topBanner {
+  width: 100;
+  background-color: rgba(60, 60, 60, 0.7);
+  padding: 5px;
+}
+
+
+.bar-block .bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.bar-block  .bar-item-top{
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+}
+
+
+
+.container,
+.panel {
+  padding: 0.01em 16px;
+}
+
+
+
+/* Accordion Classes */
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.bar-item:hover {
+  background-color: #fff;
+}
+
+.bar-item:active{
+  text-decoration:bold;
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;}
+  
+  /* Gallery Classes */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.imgContainer {
+  position: relative;
+}
+
+.imageSlide{
+  text-align:center;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {  opacity: 0.6;}
+.active,.demo:hover {  opacity: 1;}
