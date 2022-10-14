@@ -1,4 +1,4 @@
-h2{
+h2, p{
   font-family: 'Encode Sans';
 }
 
@@ -29,9 +29,6 @@ padding:5px;
  }
 
 
-
-
-
 .sideNav {
   height: 100%;
   width: 200px;
@@ -58,7 +55,6 @@ padding:5px;
   white-space: normal;
   float: none;
   outline: 0;
-  text-transform: uppercase;
 }
 
 .bar-block  .bar-item-top{
@@ -70,16 +66,13 @@ padding:5px;
   white-space: normal;
   float: none;
   outline: 0;
+
 }
-
-
 
 .container,
 .panel {
   padding: 0.01em 16px;
 }
-
-
 
 /* Accordion Classes */
 
@@ -139,6 +132,8 @@ img {
 
 .imageSlide{
   text-align:center;
+  width: 50vw; 
+  margin: auto;"
 }
 /* Hide the images by default */
 .mySlides {
@@ -155,6 +150,7 @@ img {
 /* Next & previous buttons */
 .prev,
 .next {
+  background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   position: absolute;
   top: 40%;

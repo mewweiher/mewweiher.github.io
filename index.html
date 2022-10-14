@@ -4,12 +4,13 @@
     <head>
         <meta charset="utf-8">
         <title>WIP</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
     </head>
 
 <body>
+
   <!--  NAVIGATION  -->
   <div class="sideNav bar-block">
     <button class="bar-item-top button tablink" onclick="openPage(event, 'home')">
@@ -20,9 +21,10 @@
     <button class="bar-item accordion">Gallery</button>
     <div class="panel">
       <button class="bar-item button tablink" onclick="openPage(event, 'acad')">Academic Events<span class="fade"><br />Graphic Design</span></button>
-      <button class="bar-item button tablink" onclick="openPage(event, 'diane')">Dianne's Aerobics<span class="fade"><br />Graphic Design</span></button>
-      <button class="bar-item button tablink" onclick="openPage(event, 'milk')">Angelmilk Dolls<span class="fade"><br />Graphic Design</span></button>
+      <button class="bar-item button tablink" onclick="openPage(event, 'miscdesign')">Early Design Sets<span class="fade"><br />Graphic Design</span></button>
       <button class="bar-item button tablink" onclick="openPage(event, 'lostdogs')">Lost Dogs<span class="fade"><br />Painting</span></button>
+	  <button class="bar-item button tablink" onclick="openPage(event, 'goodbad')">Good Child, Bad Child<span class="fade"><br />Painting</span></button>
+
       <button class="bar-item button tablink" onclick="openPage(event, 'beforeafter')">Designs Before & After<span class="fade"><br />Bonus</span></button>
     </div>
     <button class="bar-item button tablink" onclick="openPage(event, 'CV')">CV</button>
@@ -38,8 +40,8 @@
 
     <div id="home" class="container navTab" style="">
       <div class="container">
-        <h2>About</h2>
-        <p>I do a few things</p>
+        <h2>Mary Weiher</h2>
+        <p>Hello! I do a few things.</p>
       </div>
     </div>
 
@@ -93,12 +95,27 @@
           </div>
         </div>
       </div>
+	  <br />
+	  <br />
+	  <hr />
+	  <div style="width:500px;">
+		  <p>Much of my most recent work was for the Department of Physics & Astronomy. Since COVID-19, many of their
+		  scholarships and events that normally would've been advertised primarily as flyers needed to be turned into digital items to be shared via email and web. 
+		  Then once COVID-19 regulations eased up, those digital ads also needed flyers or slides that could be displayed on TV displays to reach those seeing them in-person.</p>
+		  <p>I only had the text to work with for most of these, so my main goal is always to emphasize the Who, What, Where, When, etc of each project, then 
+		  emphasize that hierarchy with graphics and color. </p>
+		  <p>Visit the <a href="#" onclick="openPage(event, 'beforeafter')">Before & Afters</a> for examples of this in action.
+		  </p>
+	  </div>
+	  <br />
+	  <br />
+	  
     </div>
 
 
 
-    <div id="diane" class="container navTab" style="display:none">
-      <h2>Dianne's Aerobics</h2>
+    <div id="miscdesign" class="container navTab" style="display:none">
+      <h2>Early Design Sets</h2>
 
       <div class="imgContainer">
         <div class="imageSlide">
@@ -108,26 +125,8 @@
         <div class="imageSlide">
           <img src="./images/gallery/da_1.jpg">
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-        <div class="row">
-          <div class="column">
-            <img class="demo cursor" onclick="diane.selectSlide(1)" src="./images/gallery/da_2.jpg" >
-          </div>
-          <div class="column cursor">
-            <img class="demo" onclick="diane.selectSlide(2)" src="./images/gallery/da_1.jpg">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="milk" class="container navTab" style="display:none">
-      <h2>Angel Milk Dolls</h2>
-
-      <div class="imgContainer">
-        <div class="imageSlide">
+		
+		<div class="imageSlide">
           <img src="./images/gallery/doll_1.jpg" >
         </div>
 
@@ -144,31 +143,38 @@
 
         <div class="row">
           <div class="column">
-            <img class="demo cursor" onclick="milk.selectSlide(1)" src="./images/gallery/doll_1.jpg" onclick="currentSlide(1)" >
+            <img class="demo cursor" onclick="miscDes.selectSlide(1)" src="./images/gallery/da_2.jpg" >
+          </div>
+          <div class="column cursor">
+            <img class="demo" onclick="miscDes.selectSlide(2)" src="./images/gallery/da_1.jpg">
+          </div>
+		  <div class="column">
+            <img class="demo cursor" onclick="miscDes.selectSlide(3)" src="./images/gallery/doll_1.jpg" onclick="currentSlide(1)" >
           </div>
           <div class="column">
-            <img class="demo cursor" onclick="milk.selectSlide(2)" src="./images/gallery/doll_2.jpg" onclick="currentSlide(2)">
+            <img class="demo cursor" onclick="miscDes.selectSlide(4)" src="./images/gallery/doll_2.jpg" onclick="currentSlide(2)">
           </div>
           <div class="column">
-            <img class="demo cursor" onclick="milk.selectSlide(3)" src="./images/gallery/doll_3.jpg" onclick="currentSlide(2)">
+            <img class="demo cursor" onclick="miscDes.selectSlide(5)" src="./images/gallery/doll_3.jpg" onclick="currentSlide(2)">
           </div>
         </div>
       </div>
     </div>
 
+    
     <div id="lostdogs" class="container navTab" style="display:none">
       <h2>Lost Dogs</h2>
 
       <div class="imgContainer">
         <div class="imageSlide">
-          <img src="./images/gallery/dogs_dangerhere.jpg" >
+          <img src="./images/gallery/dogs_dangerhere.png" >
         </div>
 
         <div class="imageSlide">
-          <img src="./images/gallery/dogs_badwater.jpg" >
+          <img src="./images/gallery/dogs_badwater.png" >
         </div>
         <div class="imageSlide">
-          <img src="./images/gallery/dogs_passquietly.jpg" >
+          <img src="./images/gallery/dogs_passquietly.png" >
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -176,14 +182,66 @@
 
         <div class="row">
           <div class="column">
-            <img class="demo cursor" src="./images/gallery/dogs_dangerhere.jpg"  onclick="lostDogs.selectSlide(1)" >
+            <img class="demo cursor" src="./images/gallery/dogs_dangerhere.png"  onclick="lostDogs.selectSlide(1)" >
           </div>
           <div class="column">
-            <img class="demo cursor" src="./images/gallery/dogs_badwater.jpg"  onclick="lostDogs.selectSlide(2)" >
+            <img class="demo cursor" src="./images/gallery/dogs_badwater.png"  onclick="lostDogs.selectSlide(2)" >
           </div>
 
                     <div class="column">
-            <img class="demo cursor" src="./images/gallery/dogs_passquietly.jpg"  onclick="lostDogs.selectSlide(3)" >
+            <img class="demo cursor" src="./images/gallery/dogs_passquietly.png"  onclick="lostDogs.selectSlide(3)" >
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="goodbad" class="container navTab" style="display:none">
+      <h2>Good Child, Bad Child</h2>
+
+      <div class="imgContainer">
+        <div class="imageSlide">
+          <img src="./images/gallery/child_pale.png" >
+        </div>
+
+        <div class="imageSlide">
+          <img src="./images/gallery/child_silent.png" >
+        </div>
+        <div class="imageSlide">
+          <img src="./images/gallery/child_earth.png" >
+        </div>
+		<div class="imageSlide">
+          <img src="./images/gallery/child_natureok.png" >
+        </div>
+        <div class="imageSlide">
+          <img src="./images/gallery/child_stare.png" >
+        </div>
+		<div class="imageSlide">
+          <img src="./images/gallery/child_pumpkin.png" >
+        </div>
+		
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="./images/gallery/child_pale.png"  onclick="goodbad.selectSlide(1)" >
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/gallery/child_silent.png"  onclick="goodbad.selectSlide(2)" >
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/gallery/child_earth.png"  onclick="goodbad.selectSlide(3)" >
+          </div>
+		  <div class="column">
+            <img class="demo cursor" src="./images/gallery/child_natureok.png"  onclick="goodbad.selectSlide(4)" >
+          </div>
+		  <div class="column">
+            <img class="demo cursor" src="./images/gallery/child_stare.png"  onclick="goodbad.selectSlide(5)" >
+          </div>
+		  <div class="column">
+            <img class="demo cursor" src="./images/gallery/child_pumpkin.png"  onclick="goodbad.selectSlide(6)" >
           </div>
         </div>
       </div>
@@ -226,16 +284,9 @@
     </div>
 
 
-
-
-
-
-
-
   </div>
+  <script src="./script.js"></script>
 
-   <!-- Load external JavaScript -->
-    <script src="scripts.js"></script>
 </body>
 
 

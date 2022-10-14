@@ -78,8 +78,7 @@ class ImageGallery{
 }
 
 let academy = new ImageGallery("acad");
-let diane = new ImageGallery("diane");
-let milk = new ImageGallery("milk");
+let miscDes = new ImageGallery("miscdesign");
 let lostDogs = new ImageGallery("lostdogs");
-
+let goodbad = new ImageGallery("goodbad");
 
